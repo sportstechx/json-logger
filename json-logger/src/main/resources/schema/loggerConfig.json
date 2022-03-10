@@ -27,6 +27,23 @@
             "example": "${mule.env}",
             "summary": "Name of the Mule Environment where the application is running. Recommendation: This value should be based on external property"
           }
+        },
+        "company": {
+          "type": "string",
+          "javaType": "org.mule.extension.jsonlogger.api.pojos.Company",
+          "enum": [
+            "SSU",
+            "INTERNET_STORES",
+            "OUTFITTER",
+            "PUBLIKAT",
+            "TENNIS_POINT",
+            "TENNIS_PRO"
+          ],
+          "sdk": {
+            "required": true,
+            "example": "${json.logger.application.company}",
+            "summary": "Company that is responsible for the application is running. Recommendation: This value should be based on pom.xml"
+          }
         }
       },
       "sdk": {
